@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>A. V. Wildberger</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="toggleLinks()">
+            <img src="media/HamburgerBar.png" alt="Hamburger Bar">
+        </a>
+
+        <div id="links" hidden="true">
+            <a href="https://www.github.com/AVWildberger" target="_blank" rel="noopener">
+                <img src="media/GitHub.png" alt="GitHub Icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/andr%C3%A9-valen-wildberger-6668462a1/" target="_blank" rel="noopener">
+                <img src="media/LinkedIn.png" alt="LinkedIn Icon">
+            </a>
+
+            <a href="https://instagram.com/AVWildberger" target="_blank" rel="noopener">
+                <img src="media/Instagram.png" alt="Instagram Icon">
+            </a>
+        </div>
+
+        <p id="name">Andre V. Wildberger</p>
+      </div>
+      
+      <div class="main">
+        <p>Some Text...</p>
+      </div>
+
+      <script>
+        function toggleLinks() {
+          var x = document.getElementById("links");
+          var y = document.getElementById("name");
+
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block";
+          } else {
+            x.style.display = "block";
+            if (screen.width < 350) {
+                y.style.display = "none";
+            }
+          }
+        }
+        </script>
+
+</body>
+</html>
