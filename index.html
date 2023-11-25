@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="media/favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>A. V. Wildberger</title>
 </head>
 <body>
@@ -33,23 +34,5 @@
       <div class="main">
         <p>Some Text...</p>
       </div>
-
-      <script>
-        function toggleLinks() {
-          var x = document.getElementById("links");
-          var y = document.getElementById("name");
-
-          if (x.style.display == "block") {
-            x.style.display = "none";
-            y.style.display = "block";
-          } else {
-            x.style.display = "block";
-            if (screen.width < 2/3 * screen.height || screen.height > 3/2 * screen.width) {
-                y.style.display = "none";
-            }
-          }
-        }
-        </script>
-
 </body>
 </html>
