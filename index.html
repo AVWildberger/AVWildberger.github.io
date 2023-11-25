@@ -39,12 +39,12 @@
           var x = document.getElementById("links");
           var y = document.getElementById("name");
 
-          if (x.style.display === "block") {
+          if (x.style.display == "block") {
             x.style.display = "none";
             y.style.display = "block";
           } else {
             x.style.display = "block";
-            if (screen.width < 350) {
+            if (screen.width < 2/3 * screen.height || screen.height < 3/2 * screen.width) {
                 y.style.display = "none";
             }
           }
