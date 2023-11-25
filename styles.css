@@ -59,5 +59,27 @@
   }
 
   .main {
+    margin: 0;
     margin-top: 8.5vh;
+  }
+
+  .main img {
+    border: 5px solid #000000;
+  }
+
+  body {
+    margin: 0.5vh;
+    background-color: #707070;
+  }
+
+  @media only screen and (min-width: 280px) {
+    .main img {width: 96%; margin: auto; display: block;}
+  }
+
+  @media only screen and (min-width: 768px) {
+    .main img {width: 40%; margin-left: 0.25vh;}
+  }
+
+  @media only screen and (min-width: 1366px) {
+    .main img {width: 20%; margin-left: 0.25vh;}
   }
