@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="media/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="media/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js"></script>
-    <link rel="preload" href="media/GitHub_color.png" as="image">
-    <link rel="preload" href="media/LinkedIn_color.png" as="image">
-    <link rel="preload" href="media/Instagram_color.png" as="image">
+    <link rel="preload" href="media/GitHub_color.png" as="image" />
+    <link rel="preload" href="media/LinkedIn_color.png" as="image" />
+    <link rel="preload" href="media/Instagram_color.png" as="image" />
     <title>A. V. Wildberger</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <a href="javascript:void(0)" onclick="toggleLinks()" id="hamburgerBar">
-            <img src="media/HamburgerBar.png" alt="Hamburger Bar">
+      <a href="javascript:void(0)" onclick="toggleLinks()" id="hamburgerBar">
+        <img src="media/HamburgerBar.png" alt="Hamburger Bar" />
+      </a>
+
+      <div id="links" hidden="true">
+        <a
+          href="https://www.github.com/AVWildberger"
+          target="_blank"
+          rel="noopener"
+          id="github"
+        >
+          <img src="media/GitHub.png" alt="GitHub Icon" />
         </a>
 
-        <div id="links" hidden="true">
-            <a href="https://www.github.com/AVWildberger" target="_blank" rel="noopener" id="github">
-                <img src="media/GitHub.png" alt="GitHub Icon">
-            </a>
+        <a
+          href="https://www.linkedin.com/in/andr%C3%A9-valen-wildberger-6668462a1/"
+          target="_blank"
+          rel="noopener"
+          id="linkedIn"
+        >
+          <img src="media/LinkedIn.png" alt="LinkedIn Icon" />
+        </a>
 
-            <a href="https://www.linkedin.com/in/andr%C3%A9-valen-wildberger-6668462a1/" target="_blank" rel="noopener" id="linkedIn">
-                <img src="media/LinkedIn.png" alt="LinkedIn Icon">
-            </a>
-
-            <a href="https://instagram.com/AVWildberger" target="_blank" rel="noopener" id="instagram">
-                <img src="media/Instagram.png" alt="Instagram Icon">
-            </a>
-        </div>
-
-        <p id="name">Andre V. Wildberger</p>
+        <a
+          href="https://instagram.com/AVWildberger"
+          target="_blank"
+          rel="noopener"
+          id="instagram"
+        >
+          <img src="media/Instagram.png" alt="Instagram Icon" />
+        </a>
       </div>
-      <div class="main">
-        <img id="user_picture" src="media/picture.jpg" alt="Picture">
 
-        <div class="aboutMe_Copy" hidden="true">
-            <p>
-                <b><u>Über mich:</u></b> <br><br>
-                Ich bin André Wildberger, 15 Jahre alt, und besuche derzeit die HTL Leonding im Zweig Informatik.
-                Schon seit meiner Kindheit fasziniert mich die Welt des Programmierens.
-                Damals halt einfach vereinfacht mit Scratch.
-                In meiner Freizeit widme ich mich leidenschaftlich dem Programmieren und treffe mich gerne mit Freunden.
-            </p>
+      <p id="name">Andre V. Wildberger</p>
+    </div>
+
+    <div class="main">
+      <img id="user_picture" src="media/picture.jpg" alt="Picture" />
+
+      <div class="middle_content">
+        <div class="aboutMe">
+          <p style="font-size: xx-large">
+            <b><u>Über mich:</u></b>
+          </p>
+          <p>
+            Ich bin <b>André Wildberger, 15 Jahre</b> alt, und besuche derzeit
+            die <b>HTL Leonding</b> im Zweig <b>Informatik</b>. Schon seit
+            meiner Kindheit fasziniert mich die Welt des Programmierens. Damals
+            vereinfacht mit visuellen Programmiersprachen und heute mit
+            Textbasierten. <br><br>
+            Ich bin ein sehr <b>lerninteressierter Mensch</b>, was bedeutet,
+            dass ich mich über jeden Tipp freue, den ich von Menschen bekomme,
+            welche schon mehr Erfahrung haben! In meiner <b>Freizeit</b> widme
+            ich mich leidenschaftlich dem Programmieren und treffe mich gerne
+            mit Freunden. Außerdem bin ich ein sehr <b>engagierter</b> Mensch
+            und setze mich auch in meiner Freizeit für sinnvolle Projekte ein!
+          </p>
         </div>
 
         <div class="skills">
-            <p><b><u>Skills:</u></b> <br><br></p>
-            <ul>
-                <li>HTML Beginnerkenntnisse</li>
-                <li>CSS Beginnerkenntnisse</li>
-                <li>C# Erfahren</li>
-                <li>Microsoft Office</li>
-            </ul>
-                
-        </div>
+          <p><b>Skills:</b><br /></p>
+          <button>
+            <img src="media/csharp.png" alt="csharp image" /> C# - Erfahren
+          </button>
+          <br/>
 
-        <div class="aboutMe">
-            <p>
-                <b><u>Über mich:</u></b> <br><br>
-                Ich bin André Wildberger, 15 Jahre alt, und besuche derzeit die HTL Leonding im Zweig Informatik.
-                Schon seit meiner Kindheit fasziniert mich die Welt des Programmierens.
-                Damals halt einfach vereinfacht mit Scratch.
-                In meiner Freizeit widme ich mich leidenschaftlich dem Programmieren und treffe mich gerne mit Freunden.
-            </p>
+          <button>
+            <img src="media/html.png" alt="html image" /> HTML - Beginner
+          </button>
+          <br/>
+
+          <button>
+            <img src="media/css.png" alt="css image" /> CSS - Beginner
+          </button>
+          <br>
+
+          <button>
+            <img src="media/ms_office.png" alt="ms office image" /> Microsoft Office - Erfahren
+          </button>
+          <br>
+
+          <button>
+            <img src="media/talking.png" alt="ms office image" /> Kommunikativ
+          </button>
+          <br>
+
+          <button>
+            <img src="media/future.png" alt="css image" /> Den Willen mehr zu lernen!
+          </button>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>
